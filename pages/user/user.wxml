@@ -1,0 +1,2 @@
+<!--user.wxml-->
+<text>{{welcome}}</text>
