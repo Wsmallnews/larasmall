@@ -1,10 +1,23 @@
 <!--index.wxml-->
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+<view class="view-head">
+  <view class="my-info">
+    <text>{{userInfo.nickName}}</text>
+    <image class="my-head" src="{{ userInfo.avatarUrl }}"></image>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+</view>
+
+<view class="view-list">
+  <view class="view-list-item">
+    <image class="view-item-head" src="{{ userInfo.avatarUrl }}"></image>
+    <view class="view-item-name">
+      <text>{{userInfo.nickName}}</text>
+    </view>
+
+    <text class="view-item-content">这是朋友圈内容</text>
+
+    <view class="view-item-footer">
+      <text class="view-footer-date">10分钟前</text>
+      <icon class="oper-icon" type="success" size="30"/>
+    </view>
   </view>
 </view>

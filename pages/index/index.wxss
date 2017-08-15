@@ -1,21 +1,68 @@
 /**index.wxss**/
-.userinfo {
+.view-head {
+  height: 500rpx;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background: url(/images/logoback.jpg);
+  position: relative;
+  margin-bottom: 100rpx;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.view-head .my-info {
+  height:200rpx;
+  position: absolute;
+  bottom: -85rpx;
+  right: 30rpx;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.view-head .my-info image {
+  width: 200rpx;
+  height: 200rpx;
+  border: 1px solid #CDCDCD;
 }
 
-.usermotto {
-  margin-top: 200px;
+.view-head .my-info text {
+  position: relative;
+  bottom: 125rpx;
+  right: 30rpx;
+  color: #FFFFFF;
+}
+
+.view-list {
+}
+
+.view-list .view-list-item {
+  padding: 20rpx;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.view-list-item .view-item-head {
+  float: left;
+  margin-right: 20rpx;
+  width: 124rpx;
+  height: 124rpx;
+}
+
+.view-list-item .view-item-name {
+  padding: 10rpx 0px;
+  color: #357982;
+}
+
+.view-list-item .view-item-content {
+  padding: 10rpx 0;
+}
+
+.view-list-item .view-item-footer {
+  margin: 30rpx 0 0 144rpx;
+}
+
+.view-list-item .view-item-footer text {
+  font-size: 28rpx;
+}
+
+.view-list-item .oper-icon {
+  float: right;
 }
